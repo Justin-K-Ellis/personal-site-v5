@@ -2,7 +2,6 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
   NAME: "Justin Klitgaard",
-  EMAIL: "jlke45@icloud.com",
   NUM_POSTS_ON_HOMEPAGE: 0,
   NUM_WORKS_ON_HOMEPAGE: 0,
   NUM_PROJECTS_ON_HOMEPAGE: 0,
@@ -10,7 +9,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Justin Klitgaard",
-  DESCRIPTION: "An AI Engineer in Tokyo, Japan"
+  DESCRIPTION: "An AI Engineer in Tokyo, Japan",
 };
 
 export const BLOG: Metadata = {
@@ -25,16 +24,17 @@ export const WORK: Metadata = {
 
 export const PROJECTS: Metadata = {
   TITLE: "Projects",
-  DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
+  DESCRIPTION:
+    "A collection of my projects, with links to repositories and demos.",
 };
 
 export const SOCIALS: Socials = [
   {
     NAME: "github",
-    HREF: "https://github.com/markhorn-dev"
+    HREF: "https://github.com/markhorn-dev",
   },
   {
     NAME: "linkedin",
     HREF: "https://www.linkedin.com/in/markhorn-dev",
-  }
+  },
 ];
