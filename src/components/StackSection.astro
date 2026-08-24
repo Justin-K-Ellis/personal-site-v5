@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string
+  listData: string[]
+}
+const props = Astro.props
+
+---
+
+
+<h5 class="underline">{Astro.props.title}</h5>
+<ul>
+    {Astro.props.listData.map((data) => {
+    return <li>{data}</li>
+    })}
+</ul>

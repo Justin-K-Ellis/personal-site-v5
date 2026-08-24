@@ -1,32 +1,15 @@
 ---
-import { getCollection } from "astro:content";
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
-import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
+import  StackSection  from "@components/StackSection.astro";
 
-const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
-
-const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
-
-const allwork = (await getCollection("work"))
-  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
-  .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
-
-const work = await Promise.all(
-  allwork.map(async (item) => {
-    const { Content } = await item.render();
-    return { ...item, Content };
-  })
-);
+const progLanguages = [
+  "Python",
+  "TypeScript/JavaScript",
+  "SQL"
+]
 
 ---
 
@@ -40,20 +23,22 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
             <p>
-                Welcome to my personal site. I'm an AI engineer living and working in Tokyo. I specialize in building backend applications that utilize LLMs and other ML resources. I'm most comfortable working in Python, but I'm also a TypeScript enjoyer and competent enough in React (naturally, I've also dabbled in plenty of other languages and am open to learning just about anything). Check out my projects, CV, and if you're inclined, blog.
+                Welcome to my personal site. I'm an AI engineer living and working in Tokyo. I specialize in building backend applications that utilize LLMs and other ML resources. I'm most comfortable working in Python, but I'm also a TypeScript enjoyer and competent enough in React (naturally, I've also dabbled in plenty of other languages and am open to learning just about anything).
+            </p>
+            <p>
+                I also speak English natively and Japanese fluently (having worked in a Japanese office for eight years and using business Japanese daily).
+            </p>
+            <p>
+                Check out my projects, CV, and if you're inclined, blog.
             </p>
         </article>
       </section>
 
-      <!-- Tech stack -->
+
+      <!-- Tech Stack -->
       <section class="animate space-y-4">
-         <h4>Tech Stack</h4>
-         <h5>Languagues</h5>
-         <ul>
-             <li>Python</li>
-             <li>TypeScript / JavaScript</li>
-             <li>SQL</li>
-         </ul>
+          <h4 class="font-bold">Tech Stack</h4>
+          <StackSection title="Programming Languages" listData={progLanguages} />
       </section>
 
       <!-- Contact -->
