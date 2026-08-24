@@ -11,6 +11,30 @@ const progLanguages = [
   "SQL"
 ]
 
+const backendTech = [
+  "FastAPI",
+  "Node.js",
+  "Express.js",
+  "PostgresQL",
+  "OpenAI SDK"
+]
+
+const frontendTech = [
+  "React",
+  "Tailwind CSS",
+  "daisyUI",
+  "Astro"
+]
+
+
+const tooling = [
+  "Git, GitHub",
+  "Databricks",
+  "Vim",
+  "Vite",
+  "Notion"
+]
+
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -38,7 +62,14 @@ const progLanguages = [
       <!-- Tech Stack -->
       <section class="animate space-y-4">
           <h4 class="font-bold">Tech Stack</h4>
+          <!-- Languages -->
           <StackSection title="Programming Languages" listData={progLanguages} />
+          <!-- Backend tech -->
+          <StackSection title="Backend Technologies" listData={backendTech} />
+          <!-- Frontend tech -->
+          <StackSection title="Frontend Technologies" listData={frontendTech} />
+          <!-- Tooling, etc. -->
+          <StackSection title="Tooling, environments, etc." listData={tooling} />
       </section>
 
       <!-- Contact -->
