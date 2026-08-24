@@ -43,6 +43,10 @@ article {
   @apply prose-headings:text-black prose-headings:dark:text-white;
 }
 
+li {
+  @apply list-disc ml-6 md:ml-8;
+}
+
 @layer utilities {
   article a {
     @apply font-sans text-current underline underline-offset-2;
