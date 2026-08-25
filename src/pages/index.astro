@@ -4,36 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Link from "@components/Link.astro";
 import { SITE, HOME, SOCIALS } from "@consts";
 import  StackSection  from "@components/StackSection.astro";
-
-const progLanguages = [
-  "Python",
-  "TypeScript/JavaScript",
-  "SQL"
-]
-
-const backendTech = [
-  "FastAPI",
-  "Node.js",
-  "Express.js",
-  "PostgresQL",
-  "OpenAI SDK"
-]
-
-const frontendTech = [
-  "React",
-  "Tailwind CSS",
-  "daisyUI",
-  "Astro"
-]
-
-
-const tooling = [
-  "Git, GitHub",
-  "Databricks",
-  "Vim",
-  "Vite",
-  "Notion"
-]
+import {progLanguages, backendTech, frontendTech, tooling} from "@content/myTechStack.ts"
 
 ---
 
