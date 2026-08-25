@@ -8,9 +8,9 @@ const props = Astro.props
 ---
 
 <div class="flex flex-col gap-1 p-2 shadow-sm border border-slate-400 rounded-sm">
-    <h5 class="underline">{Astro.props.title}</h5>
+    <h5 class="underline">{props.title}</h5>
     <ul class="flex flex-col gap-0">
-        {Astro.props.listData.map((data) => {
+        {props.listData.map((data) => {
           return <li>{data}</li>
         })}
     </ul>
