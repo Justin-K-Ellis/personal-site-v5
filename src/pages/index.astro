@@ -33,14 +33,16 @@ import {progLanguages, backendTech, frontendTech, tooling} from "@content/myTech
       <!-- Tech Stack -->
       <section class="animate space-y-4">
           <h4 class="font-bold">Tech Stack</h4>
-          <!-- Languages -->
-          <StackSection title="Programming Languages" listData={progLanguages} />
-          <!-- Backend tech -->
-          <StackSection title="Backend Technologies" listData={backendTech} />
-          <!-- Frontend tech -->
-          <StackSection title="Frontend Technologies" listData={frontendTech} />
-          <!-- Tooling, etc. -->
-          <StackSection title="Tooling, environments, etc." listData={tooling} />
+          <div class="grid grid-cols-2 gap-4">
+              <!-- Languages -->
+            <StackSection title="Programming Languages" listData={progLanguages} />
+            <!-- Backend tech -->
+            <StackSection title="Backend Technologies" listData={backendTech} />
+            <!-- Frontend tech -->
+            <StackSection title="Frontend Technologies" listData={frontendTech} />
+            <!-- Tooling, etc. -->
+            <StackSection title="Tooling, environments, etc." listData={tooling} />
+          </div>
       </section>
 
       <!-- Contact -->
