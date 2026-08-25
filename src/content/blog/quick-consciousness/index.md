@@ -5,10 +5,6 @@ date: "04/29/2018"
 draft: false
 ---
 
-#
-
-_Posted on April 29, 2018 by thelaboriousgame_
-
 I want to make a quick pass at an argument to motivate thinking that the physical and consciousness are distinct, namely with the conceivability argument. This argument is by no means original or uncommon these days, but I’ll briefly rehearse it anyhow. One way of putting the conceivability argument for mind-body–or more specifically here, consciousness-brain–dualism might follow as such:
 
 1. The opposite of any logically contingent state of affairs is possible. (Axiom)
