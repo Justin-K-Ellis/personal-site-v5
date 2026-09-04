@@ -18,3 +18,17 @@ An app that indexes events from around Japan and lets users find them with a ric
   - Event type
 - Save events to your personal timeline
 - Anonymously share event lists
+
+## Tech Stack
+
+- Frontend
+  - React
+  - React Router
+  - Tailwind CSS
+  - daisyUI
+- Backend
+  - Node.js
+  - Express.js
+  - PostgresQL
+- Application language: TypeScript
+- Auth: Firebase Auth
