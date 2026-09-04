@@ -11,7 +11,10 @@ An educational app for reading and remembering English. Authenticated users can 
 
 ## Features
 
-- todo
+- Curated passages from a variety of [CEFR](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages) bands, presented in assending order, with comprehension question
+- English and Japanese UI
+- Reading/scoring history persisted for authenticated users
+- User dashboard
 
 ## Stack
 
